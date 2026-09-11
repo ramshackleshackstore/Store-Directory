@@ -15,7 +15,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background: var(--bg-gradient);
             color: var(--text-main);
             display: flex;
@@ -38,19 +38,17 @@
             margin-bottom: 32px;
         }
 
-        /* BRAND AVATAR STYLE */
         .avatar {
             width: 96px;
             height: 96px;
             border-radius: 50%;
-            background: linear-gradient(45deg, #38bdf8, #818cf8);
             margin: 0 auto 16px auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
             border: 2px solid rgba(255, 255, 255, 0.1);
+            object-fit: cover;
         }
 
         h1 {
@@ -75,7 +73,6 @@
             gap: 16px;
         }
 
-        /* PREMIUM BUTTON DESIGN */
         .link-card {
             display: flex;
             align-items: center;
@@ -91,18 +88,13 @@
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
-                        background-color 0.2s ease, 
-                        border-color 0.2s ease,
-                        box-shadow 0.2s ease;
+            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, border-color 0.2s ease;
         }
 
-        /* HOVER / TOUCH STATES */
         .link-card:hover, .link-card:active {
             transform: translateY(-3px);
             background: rgba(56, 189, 248, 0.15);
             border-color: var(--accent-color);
-            box-shadow: 0 12px 20px rgba(56, 189, 248, 0.1);
         }
 
         .icon {
@@ -124,8 +116,8 @@
     <div class="container">
         
         <div class="profile-area">
-            <!-- You can replace the emoji below with an image tag later if you want a logo -->
-            <img src="https://www.facebook.com/share/1BfGLxrAgx/" class="avatar" alt="Logo">
+            <!-- HARDCODED OFFICIAL NOTEBOOK LOGO OBJECT -->
+            <img src="https://facebook.com" class="avatar" alt="Ramshackle Shack Logo">
             <h1>Ramshackle Shack</h1>
             <p class="tagline">Exclusive drops dispatched straight from the print warehouse floor. Secure direct checkout.</p>
         </div>
